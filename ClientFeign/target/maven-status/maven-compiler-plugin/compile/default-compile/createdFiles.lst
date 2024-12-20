@@ -1,0 +1,7 @@
+exemple\eurekafeignclient\service\ClientService.class
+exemple\eurekafeignclient\EurekaFeignClientApplication.class
+exemple\eurekafeignclient\entities\Voiture.class
+exemple\eurekafeignclient\entities\Client.class
+exemple\eurekafeignclient\controller\VoitureController.class
+exemple\eurekafeignclient\repository\VoitureRepository.class
+exemple\eurekafeignclient\service\VoitureService.class

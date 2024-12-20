@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+      routes:
+        - id: r1
+          uri: http://localhost:8088
+          predicates:
+            - Path=/clients/**
+        - id: r2
+          uri: http://localhost:8088
+          predicates:
+            - Path=/client/**
+        - id: r3
+          uri: http://localhost:8089
+          predicates:
+            - Path=/voituress/**
+        - id: r4
+          uri: http://localhost:8089
+          predicates:
+            - Path=/voitures/**
